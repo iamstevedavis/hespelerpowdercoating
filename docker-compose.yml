@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  website:
+    container_name: hespelerpowdercoatingdotca
+    ports:
+      - "8001:80"
+    logging:
+      options:
+        max-size: "1m"
+        max-file: "3"
+    mem_limit: 2g
+    mem_reservation: 240m
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./static:/var/www/html/
