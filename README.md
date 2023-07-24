@@ -1,4 +1,4 @@
-# Starter-KitV3
+# Hespeler Powder Coating (.ca)
 This is the latest version of my starter kit that I will be using from now on to build all my websites. It has a completely remade responsive navigation that is much simpler, and easier to edit and customize.  
 
 
