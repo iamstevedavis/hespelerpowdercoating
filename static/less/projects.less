@@ -2,113 +2,92 @@
 <---         Portfolio          -->
 <--- -------------------------- -*/
 
-/* Mobile */
-@media only screen and (min-width: 0em) {
+#portfolio {
+    padding: 64px 0 96px;
+
+    .container {
+        width: 92%;
+        max-width: 1322px;
+        margin: 0 auto;
+    }
+
+    .portfolio-intro {
+        max-width: 700px;
+        margin: 0 auto 40px;
+        text-align: center;
+
+        h2 {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .portfolio-card {
+        overflow: hidden;
+        border-radius: 8px;
+        background: #f4f4f2;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    }
+
+    .portfolio-photo {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        height: auto;
+        object-fit: cover;
+
+        &.contain {
+            object-fit: contain;
+        }
+    }
+
+    figcaption {
+        padding: 14px 18px 18px;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #1a1a1a;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #portfolio .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 600px) {
     #portfolio {
-        padding-top: 50/16em;
-        padding-bottom: 35%;
-        position: relative;
-        z-index: 5;
+        padding: 48px 0 72px;
 
-        .container {
-            width: 96%;
-            max-width: 1322/16em;
-            padding: 0;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 30/16em;
-            font-size:~"min(1.3vw, 1em)";
-            
-            .row {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                gap: 30/16em;
-
-                &:nth-of-type(1) {
-                    picture {
-                        &:nth-of-type(1) {
-                            width: 420/16em;
-                            height: 567/16em;
-                        }
-
-                        &:nth-of-type(2) {
-                            width: 420/16em;
-                            height: 629/16em;
-                        }
-
-                        &:nth-of-type(3) {
-                            width: 420/16em;
-                            height: 512/16em;
-                        }
-
-
-                    }
-                }
-
-                &:nth-of-type(2) {
-                    picture {
-                        &:nth-of-type(1) {
-                            width: 420/16em;
-                            height: 492/16em;
-                        }
-
-                        &:nth-of-type(2) {
-                            width: 420/16em;
-                            height: 517/16em;
-                        }
-
-                        &:nth-of-type(3) {
-                            width: 420/16em;
-                            height: 629/16em;
-                        }
-                    }
-                }
-
-                &:nth-of-type(3) {
-                    picture {
-                        &:nth-of-type(1) {
-                            width: 420/16em;
-                            height: 625/16em;
-                        }
-
-                        &:nth-of-type(2) {
-                            width: 420/16em;
-                            height: 452/16em;
-                        }
-
-                        &:nth-of-type(3) {
-                            width: 420/16em;
-                            height: 629/16em;
-                        }
-                    }
-                }
-
-                picture {
-                    position: relative;
-                    display: block;
-                    img {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 100%;
-                        width: 100%;
-                        object-fit: cover;
-                        border-radius: 8/16em;
-                    }
-                }
-            }
+        .portfolio-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
         }
     }
 }
 
-/* Small Desktop */
-@media only screen and (min-width: 64em) {
-    #portfolio {
-        padding: 150/16em 0;
+body.dark-mode #portfolio {
+    .portfolio-intro h2 {
+        color: #fff;
+    }
+
+    .portfolio-card {
+        background: #1c2a34;
+    }
+
+    figcaption {
+        color: #fff;
     }
 }
 
