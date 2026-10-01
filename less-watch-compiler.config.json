@@ -2,5 +2,6 @@
   "watchFolder": "less",
   "outputFolder": "css",
   "runOnce": false,
-  "enableJs": true
+  "enableJs": true,
+  "lessArgs": "math=always"
 }

@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "less": "^1.7.5",
-    "less-watch-compiler": "1.1.4"
+    "less": "^4.9.1",
+    "less-watch-compiler": "^1.19.9"
   }
 }

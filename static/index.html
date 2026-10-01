@@ -30,7 +30,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Preload -->
-    <link rel="preload" as="image" href="/images/hero-powder-coated-parts.jpeg">
+    <link rel="preload" as="image" href="/images/hero-powder-coated-parts.webp" fetchpriority="high">
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-regular.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
@@ -68,11 +68,11 @@
             <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
             <a class="logo" aria-label="click to go to home page" href="/index.html">
                 <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
-                <img class="light" aria-hidden="true" src="/images/logo-light.png" decoding="async" alt="logo"
+                <img class="light" aria-hidden="true" src="/images/logo-light.webp" decoding="async" alt="logo"
                     width="221" height="66">
 
                 <!--Dark Colored Logo-->
-                <img class="dark" aria-hidden="true" src="/images/logo-dark.png" decoding="async" loading="lazy"
+                <img class="dark" aria-hidden="true" src="/images/logo-dark.webp" decoding="async" loading="lazy"
                     alt="logo" width="221" height="66">
             </a>
 
@@ -84,11 +84,15 @@
                     <li><a href="/projects.html">Projects</a></li>
                     <li><a href="/reviews.html">Reviews</a></li>
                     <li><a href="/contact.html">Contact</a></li>
+                    <li><a class="maps-link" href="https://maps.app.goo.gl/1933eHAmqEydDVGB9" target="_blank" rel="noopener noreferrer" aria-label="Find us on Google Maps (opens in a new tab)">
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Find Us
+                    </a></li>
                 </ul>
             </nav>
 
             <!--Dark Mode toggle-->
-            <button id="dark-mode-toggle">
+            <button id="dark-mode-toggle" type="button" aria-label="Dark mode" aria-pressed="false">
                 <!--Moon is an inline SVG so you can edit the color if needed-->
                 <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
                     style="enable-background:new 0 0 480 480" xml:space="preserve">
@@ -100,7 +104,7 @@
             </button>
 
             <!--Mobile Nav toggle-->
-            <button class="hamburger-menu">
+            <button class="hamburger-menu" type="button" aria-label="Navigation menu" aria-controls="navbar-menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
             </button>
         </div>
@@ -126,10 +130,8 @@
                 </div>
             </div>
             <picture>
-                <source media="(max-width: 600px)" srcset="/images/hero-powder-coated-parts.jpeg">
-                <source media="(min-width: 601px)" srcset="/images/hero-powder-coated-parts.jpeg">
-                <img decoding="async" src="/images/hero-powder-coated-parts.jpeg" alt="Glossy black powder coated metal restoration parts" width="275"
-                    height="132">
+                <img decoding="async" fetchpriority="high" src="/images/hero-powder-coated-parts.webp" alt="Glossy black powder coated metal restoration parts" width="1536"
+                    height="1152">
             </picture>
         </section>
 
@@ -215,9 +217,9 @@
                     <a class="button-solid" href="/about.html">More About Us</a>
                 </div>
                 <picture class="image-box">
-                    <source media="(max-width: 600px)" srcset="/images/engine-header-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/images/engine-header.jpg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="/images/engine-header.jpg"
+                    <source media="(max-width: 600px)" srcset="/images/engine-header-640.webp">
+                    <source media="(min-width: 601px)" srcset="/images/engine-header-1200.webp">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/images/engine-header-1200.webp"
                         alt="cabinets" width="400" height="662">
                 </picture>
             </div>
@@ -275,9 +277,9 @@
                     <a class="button-solid" href="/contact.html">Get Free Quote</a>
                 </div>
                 <picture class="image-box">
-                    <source media="(max-width: 600px)" srcset="/images/engine-header-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/images/engine-header.jpg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="/images/engine-header.jpg"
+                    <source media="(max-width: 600px)" srcset="/images/engine-header-640.webp">
+                    <source media="(min-width: 601px)" srcset="/images/engine-header-1200.webp">
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/images/engine-header-1200.webp"
                         alt="cabinets" width="400" height="662">
                 </picture>
             </div>
@@ -296,9 +298,9 @@
                 <a href="/contact.html" class="button-solid">Get an Estimate Now</a>
             </div>
             <picture>
-                <source media="(max-width: 600px)" srcset="/images/engine-header-m.webp">
-                <source media="(min-width: 601px)" srcset="/images/engine-header.jpg">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="/images/engine-header.jpg"
+                <source media="(max-width: 600px)" srcset="/images/engine-header-640.webp">
+                <source media="(min-width: 601px)" srcset="/images/engine-header-1200.webp">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/images/engine-header-1200.webp"
                     alt="kitchen cabinets" width="1920" height="1280">
             </picture>
         </section>
@@ -311,7 +313,7 @@
     <footer id="footer">
         <div class="container">
             <div class="left-section">
-                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="/images/logo-light.png"
+                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="/images/logo-light.webp"
                         alt="logo" width="264" height="78"></a>
                 <!-- <p>
                     Extra content if you need it, if not you can delete this whole p tag. I usually do.
@@ -342,7 +344,7 @@
                         <li>
                             <h2>Contact</h2>
                         </li>
-                        <li><a href="/contact.html">46 Stafford Court Unit B<br>Cambridge, ON</a></li>
+                        <li><a href="https://maps.app.goo.gl/1933eHAmqEydDVGB9" target="_blank" rel="noopener noreferrer" aria-label="46 Stafford Court Unit B, Cambridge, Ontario on Google Maps (opens in a new tab)">46 Stafford Court Unit B<br>Cambridge, ON</a></li>
                         <li><a href="tel:519-658-3144">T: (519) 658-3144</a></li>
                         <li><a href="mailto:info@hespelerpowdercoating.ca">Click to Email</a></li>
                     </ul>

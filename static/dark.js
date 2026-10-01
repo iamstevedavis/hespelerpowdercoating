@@ -14,12 +14,14 @@ let darkMode = localStorage.getItem("darkMode");
 // Enable Dark Mode
 const enableDarkMode = () => {
   body.classList.add("dark-mode");
+  darkModeToggle.setAttribute('aria-pressed', 'true');
   localStorage.setItem("darkMode", "enabled")
 }
 
 // Disable Dark mode
 const disableDarkMode = () => {
   body.classList.remove("dark-mode");
+  darkModeToggle.setAttribute('aria-pressed', 'false');
   localStorage.setItem("darkMode", null)
 }
 

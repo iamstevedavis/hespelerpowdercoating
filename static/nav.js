@@ -7,4 +7,5 @@ const hamburgerMenu = document.querySelector("#navigation .hamburger-menu");
 hamburgerMenu.addEventListener('click', function() {
     navbarMenu.classList.toggle("open");
     hamburgerMenu.classList.toggle("clicked");
+    hamburgerMenu.setAttribute('aria-expanded', navbarMenu.classList.contains("open"));
 });

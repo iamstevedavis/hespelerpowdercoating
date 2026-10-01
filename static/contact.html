@@ -77,11 +77,15 @@
                     <li><a href="/projects.html">Projects</a></li>
                     <li><a href="/reviews.html">Reviews</a></li>
                     <li><a class="active" href="/contact.html">Contact</a></li>
+                    <li><a class="maps-link" href="https://maps.app.goo.gl/1933eHAmqEydDVGB9" target="_blank" rel="noopener noreferrer" aria-label="Find us on Google Maps (opens in a new tab)">
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Find Us
+                    </a></li>
                 </ul>
             </nav>
 
             <!--Dark Mode toggle-->
-            <button id="dark-mode-toggle">
+            <button id="dark-mode-toggle" type="button" aria-label="Dark mode" aria-pressed="false">
                 <!--Moon is an inline SVG so you can edit the color if needed-->
                 <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"
                     style="enable-background:new 0 0 480 480" xml:space="preserve">
@@ -93,7 +97,7 @@
             </button>
 
             <!--Mobile Nav toggle-->
-            <button class="hamburger-menu">
+            <button class="hamburger-menu" type="button" aria-label="Navigation menu" aria-controls="navbar-menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
             </button>
         </div>
@@ -228,7 +232,7 @@
                         <li>
                             <h2>Contact</h2>
                         </li>
-                        <li><a href="/contact.html">46 Stafford Court Unit B<br>Cambridge, ON</a></li>
+                        <li><a href="https://maps.app.goo.gl/1933eHAmqEydDVGB9" target="_blank" rel="noopener noreferrer" aria-label="46 Stafford Court Unit B, Cambridge, Ontario on Google Maps (opens in a new tab)">46 Stafford Court Unit B<br>Cambridge, ON</a></li>
                         <li><a href="tel:519-658-3144">T: (519) 658-3144</a></li>
                         <li><a href="mailto:info@hespelerpowdercoating.ca">Click to Email</a></li>
                     </ul>
