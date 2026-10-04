@@ -1,4 +1,9 @@
 # Hespeler Powder Coating (.ca)
+
+[![Better Stack Badge](https://incidents.betterstack.com/status-badges/v2/monitor/2zje1.svg)](https://incidents.betterstack.com/?utm_source=status_badge)
+
+The Hespeler Powder Coating website is monitored by Better Stack. Use the status badge above to view the monitor's current status.
+
 This is the latest version of my starter kit that I will be using from now on to build all my websites. It has a completely remade responsive navigation that is much simpler, and easier to edit and customize.  
 
 
